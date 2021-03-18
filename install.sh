@@ -2,4 +2,7 @@
 
 mkdir -p "${HOME}/.config/kitty"
 
-ln -sf "${PWD}/config" "${HOME}/.config/kitty/kitty.config"
+for conf in *.conf
+do
+    ln -sf "${PWD}/${conf}" "${HOME}/.config/kitty/"
+done
